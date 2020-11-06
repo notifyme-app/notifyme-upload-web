@@ -7,7 +7,7 @@ let upload = async () => {
     const endTime = document.getElementById('end-time').value;
     console.log("Start time: " + startTime  + " End time: " + endTime);
 
-    const rawResponse = await fetch(`${GIT_INFO}`, {
+    const rawResponse = await fetch(`${POST_URL}`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
