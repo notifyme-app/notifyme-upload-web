@@ -824,6 +824,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@dmuy/toast@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@dmuy/toast/-/toast-2.0.2.tgz#76cb857be7f968499b9a0a73ad65973c7cb42daa"
+  integrity sha512-sEkRhZqP4jAs2zlZNOZ9SMyNt+4CWmlaUNVeg0t+hNdGBwx65LtT4zB94fL15PGu7Sb4tTiCdxZWnvLo+eSz1Q==
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/@types/eslint-scope/-/eslint-scope-3.7.0.tgz#4792816e31119ebd506902a482caec4951fabd86"

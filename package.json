@@ -26,5 +26,7 @@
     "build:prod": "webpack --config webpack.prod.js --env POST_URL='https://app-prod-ws.n2s.ch/v1/debug/traceKey'",
     "dev-server": "webpack serve --config webpack.dev.js --env POST_URL='https://app-dev-ws.n2s.ch/v1/debug/traceKey'"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@dmuy/toast": "^2.0.2"
+  }
 }

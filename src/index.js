@@ -1,4 +1,6 @@
+import '@dmuy/toast/dist/mdtoast.css'
 import './styles/main.scss'
+import mdtoast from '@dmuy/toast'
 
 let upload = async () => {
     const tracePayload = window.location.hash.slice(1);
@@ -6,6 +8,11 @@ let upload = async () => {
     const startTime = document.getElementById('start-time').value;
     const endTime = document.getElementById('end-time').value;
     console.log("Start time: " + startTime  + " End time: " + endTime);
+    
+    if(!startTime || !endTime) {
+        mdtoast("Please fill out both fields", {type: "WARNING"});
+        return;
+    }
 
     let formData = new FormData();
     formData.append('ctx', tracePayload);

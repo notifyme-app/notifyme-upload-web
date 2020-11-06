@@ -36,3 +36,9 @@ $teal: #00a690;
     }
   }
 }
+
+.mdtoast {
+  &.mdt--WARNING {
+    background-color: #ef5350;
+  }
+}
