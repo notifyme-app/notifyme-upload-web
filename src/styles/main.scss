@@ -2,6 +2,7 @@ $purple: #413f8d;
 $purple-dark: #292859;
 $teal: #00a690;
 
+@import "fonts";
 
 .center-screen {
   display: flex;
@@ -10,6 +11,10 @@ $teal: #00a690;
   align-items: center;
   text-align: center;
   min-height: 100vh;
+}
+
+#success-message {
+  display: none;
 }
 
 .mui-btn {
