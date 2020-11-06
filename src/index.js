@@ -23,7 +23,6 @@ let upload = async () => {
 
     const rawResponse = await fetch(`${POST_URL}`, {
         method: 'POST',
-        mode: 'no-cors',
         body: formData
     }).then(function (response) {
         if(response.ok) {
