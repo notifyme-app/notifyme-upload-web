@@ -25,7 +25,7 @@
   "scripts": {
     "build:dev": "webpack --config webpack.dev.js --env POST_URL='https://app-dev-ws.n2s.ch/v1/debug/traceKey' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\"",
     "build:prod": "webpack --config webpack.prod.js --env POST_URL='https://app-prod-ws.n2s.ch/v1/debug/traceKey' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\"",
-    "dev-server": "webpack serve --config webpack.dev.js --env POST_URL='https://app-dev-ws.n2s.ch/v1/debug/traceKey' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\""
+    "dev-server": "webpack serve --config webpack.dev.js --env POST_URL='./v1/debug/traceKey' --env GIT_INFO=\"$(git log -1 --format='%h, %ad' --date=format:'%d.%m.%Y, %H:%M')\""
   },
   "dependencies": {
     "@dmuy/toast": "^2.0.2"

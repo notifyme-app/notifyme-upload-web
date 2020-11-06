@@ -9,7 +9,13 @@ module.exports = env => {
       filename: "bundle.js"
     },
     devServer: {
-      contentBase: path.join(__dirname, 'dist')
+      contentBase: path.join(__dirname, 'dist'),
+      proxy: {
+        '/v1': {
+          target: 'https://app-dev-ws.n2s.ch',
+          secure: false
+        }
+      }
     },
     module: {
       rules: [
