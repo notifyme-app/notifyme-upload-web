@@ -54,7 +54,8 @@ module.exports = env => {
     },
     plugins: [
       new webpack.DefinePlugin({
-        'POST_URL': JSON.stringify(env.POST_URL)
+        POST_URL: JSON.stringify(env.POST_URL),
+        GIT_INFO: JSON.stringify(env.GIT_INFO),
       })
     ]
   }

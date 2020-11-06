@@ -47,3 +47,14 @@ $teal: #00a690;
     background-color: #ef5350;
   }
 }
+
+#revision {
+  position: fixed;
+  bottom: 10;
+  right: 10;
+  font-size: 12px;
+
+  @media print {
+    display: none;
+  }
+}
