@@ -5,12 +5,9 @@ $teal: #00a690;
 @import "fonts";
 
 .center-screen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  margin-top: 64px;
 }
 
 #success-message {
@@ -29,15 +26,21 @@ $teal: #00a690;
   }
 }
 
-.mui-textfield input {
-  text-align: center;
+.mui-textfield {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 
-  &:focus,
-  &:active {
-    border-bottom-color: $teal;
+  input {
+    text-align: center;
 
-    + label {
-      color: $teal;
+    &:focus,
+    &:active {
+      border-bottom-color: $teal;
+
+      + label {
+        color: $teal;
+      }
     }
   }
 }
