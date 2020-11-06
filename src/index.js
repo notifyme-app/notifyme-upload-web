@@ -7,16 +7,18 @@ let upload = async () => {
     const endTime = document.getElementById('end-time').value;
     console.log("Start time: " + startTime  + " End time: " + endTime);
 
+    let formData = new FormData();
+    formData.append('ctx', tracePayload);
+    formData.append('startTime', new Date(startTime).getTime());
+    formData.append('endTime', new Date(endTime).getTime());
+
     const rawResponse = await fetch(`${POST_URL}`, {
         method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ctx: tracePayload, starTime: startTime, endTime: endTime})
+        mode: 'no-cors',
+        body: formData
+      }).then(function(response) {
+        console.log(response.ok);
       });
-    const responseContent = await rawResponse.json();
-    console.log(responseContent)
 };
 
 let ready = (fn) => {
