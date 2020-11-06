@@ -1,0 +1,30 @@
+{
+  "name": "n2step-upload-web",
+  "version": "0.0.1",
+  "description": "Debug QRTrace Key Upload Web App",
+  "main": "index.js",
+  "repository": "https://github.com/UbiqueInnovation/n2step-upload-web.git",
+  "author": "n2step@ubique.ch",
+  "license": "MPL-2.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^5.0.1",
+    "path-browserify": "^1.0.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build:dev": "webpack --config webpack.dev.js --env UPLOAD_URL='https://upload-dev.n2s.ch'",
+    "build:prod": "webpack --config webpack.prod.js --env UPLOAD_URL='https://upload.n2s.ch'",
+    "dev-server": "webpack serve --config webpack.dev.js --env UPLOAD_URL='https://upload-dev.n2s.ch'"
+  },
+  "dependencies": {}
+}
