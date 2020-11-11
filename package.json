@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Debug QRTrace Key Upload Web App",
   "main": "index.js",
-  "repository": "https://github.com/UbiqueInnovation/n2step-upload-web.git",
+  "repository": "https://github.com/notifyme-app/notifyme-upload-web.git",
   "author": "n2step@ubique.ch",
   "license": "MPL-2.0",
   "private": true,
