@@ -12,7 +12,7 @@ module.exports = env => {
       contentBase: path.join(__dirname, 'dist'),
       proxy: {
         '/v1': {
-          target: 'https://app-dev-ws.n2s.ch',
+          target: 'https://app-dev-ws.notify-me.ch',
           secure: false
         }
       }
