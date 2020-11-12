@@ -1,10 +1,10 @@
 {
-  "name": "n2step-upload-web",
+  "name": "notifyme-upload-web",
   "version": "0.0.1",
   "description": "Debug QRTrace Key Upload Web App",
   "main": "index.js",
   "repository": "https://github.com/notifyme-app/notifyme-upload-web.git",
-  "author": "n2step@ubique.ch",
+  "author": "notify-me@ubique.ch",
   "license": "MPL-2.0",
   "private": true,
   "devDependencies": {
